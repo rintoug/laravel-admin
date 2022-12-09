@@ -1,0 +1,35 @@
+{
+    "name": "rintoug/laravel-admin",
+    "description": "This is custom admin section built for laravel projects",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rintoug\\LaravelAdmin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rintoug\\LaravelAdmin\\Providers\\LaravelAdminServiceProvider"
+            ],
+            "aliases": {
+                "Parameters": "Rintoug\\LaravelAdmin\\Facades\\LaravelAdmin"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Rinto George"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.43"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
