@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Rintoug\\LaravelAdmin\\": "src/"
-        }
+        },
+        "files": ["src/Helpers/Common.php"]
     },
     "extra": {
         "laravel": {

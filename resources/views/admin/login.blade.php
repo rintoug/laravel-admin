@@ -1,1 +1,1 @@
-Hello from blade
+{{ assetPath('hello') }}
