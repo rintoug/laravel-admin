@@ -11,6 +11,9 @@ class AuthController extends Controller
 {
     public function login(Request $request)
     {
+        if(Auth::user()) {
+            return Redirect('admin/dashboard');
+        }
         return view('laravel-admin::admin.login', []);
 
     }

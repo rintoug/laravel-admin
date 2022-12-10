@@ -38,70 +38,15 @@
     <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ assetPath('css/style.css') }}" rel="stylesheet">
     <!-- We use those styles to show code examples, you should remove them in your application.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        // Shared ID
-        gtag('config', 'UA-118965717-3');
-        // Bootstrap ID
-        gtag('config', 'UA-118965717-5');
-    </script>
 </head>
 <body>
 <div class="bg-light min-vh-100 d-flex flex-row align-items-center">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card-group d-block d-md-flex row">
-                    <div class="card col-md-7 p-4 mb-0">
-                        <div class="card-body">
-                            <h1>Login</h1>
-                            <p class="text-medium-emphasis">Sign In to your account</p>
-                            <div class="input-group mb-3"><span class="input-group-text">
-                      <svg class="icon">
-                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
-                      </svg></span>
-                                <input class="form-control" type="text" placeholder="Username">
-                            </div>
-                            <div class="input-group mb-4"><span class="input-group-text">
-                      <svg class="icon">
-                        <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
-                      </svg></span>
-                                <input class="form-control" type="password" placeholder="Password">
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <button class="btn btn-primary px-4" type="button">Login</button>
-                                </div>
-                                <div class="col-6 text-end">
-                                    <button class="btn btn-link px-0" type="button">Forgot password?</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-md-5 text-white bg-primary py-5">
-                        <div class="card-body text-center">
-                            <div>
-                                <h2>Sign up</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <button class="btn btn-lg btn-outline-light mt-3" type="button">Register Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @yield('content')
 </div>
 <!-- CoreUI and necessary plugins-->
 <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>

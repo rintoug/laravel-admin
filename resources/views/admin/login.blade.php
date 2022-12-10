@@ -1,1 +1,51 @@
-{{ assetPath('hello') }}
+@extends('laravel-admin::admin/layout-login')
+
+@section('content')
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card-group d-block d-md-flex row">
+                    <div class="card col-md-7 p-4 mb-0">
+                        <form method="post" action="{{ action('\Rintoug\LaravelAdmin\Http\Controllers\AuthController@loginPost') }}">
+                        <div class="card-body">
+                            <h1>Login</h1>
+                            <p class="text-medium-emphasis">Sign In to your account</p>
+                            <div class="input-group mb-3"><span class="input-group-text">
+                      <svg class="icon">
+                        <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-user') }}"></use>
+                      </svg></span>
+                                <input class="form-control" name="email" type="text" placeholder="Username">
+                            </div>
+                            <div class="input-group mb-4"><span class="input-group-text">
+                      <svg class="icon">
+                        <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-lock-locked') }}"></use>
+                      </svg></span>
+                                <input class="form-control" name="password" type="password" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="btn btn-primary px-4" type="submit">Login</button>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <button class="btn btn-link px-0" type="button">Forgot password?</button>
+                                </div>
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="card col-md-5 text-white bg-primary py-5">
+                        <div class="card-body text-center">
+                            <div>
+                                <h2>Sign up</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <button class="btn btn-lg btn-outline-light mt-3" type="button">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
