@@ -54,5 +54,13 @@ class AuthController extends Controller
         return Redirect('admin');
     }
 
+    public function sampleTable() {
+        return view('laravel-admin::admin.sample-table', []);
+    }
+
+    public function sampleForm() {
+        return view('laravel-admin::admin.sample-form', []);
+    }
+
 
 }

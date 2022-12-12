@@ -12,14 +12,18 @@
                 <svg class="nav-icon">
                     <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
                 </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
-        
-        @includeIf('laravel-admin::admin.shared.extra')
 
-        <li class="nav-title">Settings</li>
-        <li class="nav-item"><a class="nav-link" href="colors.html">
+        @includeIf('laravel-admin::admin.shared.menu')
+
+        <li class="nav-title">MISC</li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('admin/sample-form') }}">
                 <svg class="nav-icon">
-                    <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-drop')}}"></use>
-                </svg> Configuration</a></li>
+                    <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-chart-pie') }}"></use>
+                </svg> Sample Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('admin/sample-table') }}">
+                <svg class="nav-icon">
+                    <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-chart-pie') }}"></use>
+                </svg> Sample Table</a></li>
 
         <!-- Next section -->
         <li class="nav-title">Profile</li>
@@ -28,8 +32,6 @@
                 <svg class="nav-icon">
                     <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-chart-pie') }}"></use>
                 </svg> Reset Password</a></li>
-
-
 
 
         <li class="nav-divider"></li>
