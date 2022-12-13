@@ -13,7 +13,7 @@
                     <use xlink:href="{{ assetPath('vendors/@coreui/icons/svg/free.svg#cil-speedometer')}}"></use>
                 </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
 
-        @includeIf('laravel-admin::admin.shared.menu')
+        @includeIf('admin.shared.left-menu')
 
         <li class="nav-title">MISC</li>
         <li class="nav-item"><a class="nav-link" href="{{ url('admin/sample-form') }}">

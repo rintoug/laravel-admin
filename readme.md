@@ -21,7 +21,7 @@ Publish your view by issuing the below command
 3. Run ```composer update```
 4. Optional: if you want customize the admin template, try to publish the view.
    ```
-    php artisan vendor:publish --provider="Rintoug\LaravelAdmin\Providers\LaravelAdminServiceProvider" --tag="views" ```\
+    php artisan vendor:publish --provider="Rintoug\LaravelAdmin\Providers\LaravelAdminServiceProvider" --tag="views"
 5. Run ```php artisan migrate```
 6. At this step you are ready to go, hit the url ```http://localhost/admin```
 
