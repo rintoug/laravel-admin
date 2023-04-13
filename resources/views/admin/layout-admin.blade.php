@@ -148,6 +148,9 @@
 <!-- CoreUI and necessary plugins-->
 <script src="{{ assetPath('vendors/@coreui/coreui/js/coreui.bundle.min.js') }}"></script>
 <script src="{{ assetPath('vendors/simplebar/js/simplebar.min.js') }}"></script>
+<!-- Alpine JS-->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 <!-- Plugins and scripts required by this view-->
 @yield('footerjs')
 <script>
