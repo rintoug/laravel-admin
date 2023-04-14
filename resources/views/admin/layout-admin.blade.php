@@ -45,6 +45,8 @@
     <!--<link href="{{ assetPath('css/examples.css') }}" rel="stylesheet">-->
     <!-- Alpine JS-->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Include extra styles-->
+    @includeIf('admin.styles')
 
 </head>
 <body>
@@ -150,6 +152,8 @@
 <!-- CoreUI and necessary plugins-->
 <script src="{{ assetPath('vendors/@coreui/coreui/js/coreui.bundle.min.js') }}"></script>
 <script src="{{ assetPath('vendors/simplebar/js/simplebar.min.js') }}"></script>
+<!-- Include extra scripts-->
+@includeIf('admin.scripts')
 
 <!-- Plugins and scripts required by this view-->
 @yield('footerjs')
