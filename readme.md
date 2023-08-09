@@ -28,7 +28,7 @@ Publish your view by issuing the below command
    ```
    php artisan tinker
 
-   User::create(["name"=> "Rinto George","email"=>"mail.rinto@gmail.com","password"=>bcrypt("123456")]);
+   User::create(["name"=> "Rinto George","type" => "admin",email"=>"mail.rinto@gmail.com","password"=>bcrypt("123456")]);
    ```
 8. Copy the dist folder of core ui to ```public/themes/admin``` folder   
 
