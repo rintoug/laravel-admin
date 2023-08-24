@@ -1,6 +1,12 @@
 Publish your view by issuing the below command
 ```php artisan vendor:publish --provider="Rintoug\LaravelAdmin\Providers\LaravelAdminServiceProvider" --tag="views"```
 
+
+![Alt text](https://assets.wallpapernoon.com/media/wp/medium/black-handled-key-on-key-hole-door_xkZDbEuq.jpg "key admin")
+
+(Source [From here](https://wallpapernoon.com/wp/black-handled-key-8ls6pCmWCym2)
+
+
 ### Instructions
 
 #### Installation
